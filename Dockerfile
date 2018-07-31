@@ -6,6 +6,11 @@ RUN git config --global user.email "yoanndelattre21@gmail.com"
 RUN git config --global user.name "ImWargame"
 RUN apt-get install nodejs -y
 RUN apt-get install build-essential libssl-dev -y
+
+#     <--clean installation-->
+RUN apt-get -qy clean && \
+      rm -rf /var/lib/apt/lists/*
+
 VOLUME ["/mnt"]
 EXPOSE 80 443
 WORKDIR  /mnt
