@@ -1,8 +1,6 @@
 FROM yoanndelattre/base:base-debian
 MAINTAINER Yoann Delattre "github.com/yoanndelattre | twitter.com/yoanndelattre_"
 RUN apt-get update && apt-get upgrade -y
-RUN git config --global user.email "yoanndelattre21@gmail.com"
-RUN git config --global user.name "ImWargame"
 RUN apt-get install nodejs -y
 RUN apt-get install build-essential libssl-dev -y
 
