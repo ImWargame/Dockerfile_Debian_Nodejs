@@ -2,7 +2,7 @@ FROM yoanndelattre/base:base-debian
 MAINTAINER Yoann Delattre "github.com/yoanndelattre | twitter.com/yoanndelattre_"
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install build-essential curl -y
-RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_11.x | bash -
 RUN apt-get install -y nodejs npm
 
 #     <--clean installation-->
